@@ -4,11 +4,14 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.Write("What is the magic number? ");
-        string magicNumber = Console.ReadLine();
-        int magicNum = int.Parse(magicNumber);
+        Console.WriteLine("I am thinking of a magic number between 1 and 100! Think you can guess it?");
+        // string magicNumber = Console.ReadLine();
+        // int magicNum = int.Parse(magicNumber);
 
         int guessNum = 0;
+
+        Random num = new Random();
+        int randomNum = num.Next(1, 100);
 
         do
         {
@@ -16,11 +19,11 @@ class Program
             string input = Console.ReadLine();
             guessNum = int.Parse(input);
 
-            if (guessNum > magicNum)
+            if (guessNum > randomNum)
             {
                 Console.WriteLine("Lower");
             }
-            else if (guessNum < magicNum)
+            else if (guessNum < randomNum)
             {
                 Console.WriteLine("Higher");
             }
@@ -28,6 +31,6 @@ class Program
             {
                 Console.WriteLine("You guessed it!");
             }
-        } while (magicNum != guessNum);
+        } while (randomNum != guessNum);
     }
 }
