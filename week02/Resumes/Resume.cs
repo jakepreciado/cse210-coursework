@@ -1,3 +1,5 @@
+using System;
+
 public class Resume
 {
     public string _name;
@@ -6,7 +8,7 @@ public class Resume
     public void DisplayJobs()
     {
         Console.WriteLine($"Name: {_name}\nJobs:");
-        foreach (var job in _jobs)
+        foreach (Job job in _jobs)
         {
             job.Display();
         }
