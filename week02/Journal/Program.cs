@@ -47,7 +47,7 @@ class Program
             {
                 Console.Write("Enter the file you would like to load: ");
                 string fileName = Console.ReadLine();
-                journal.Load(fileName);
+                journal.Load(fileName)
                 Console.WriteLine($"{fileName} has been loaded!\n");
             }
             else if (choice == 4)
