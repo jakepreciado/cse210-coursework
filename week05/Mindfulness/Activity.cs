@@ -14,7 +14,7 @@ public class Activity
     public void DisplayStartingMessage()
     {
         Console.Clear();
-        Console.WriteLine($"\nWelcome to the {_name}");
+        Console.WriteLine($"\nWelcome to the {_name}.");
         Console.WriteLine($"\n{_description}");
 
         Console.Write("\nHow many seconds would you like your session to be? ");
@@ -29,7 +29,7 @@ public class Activity
     {
         Console.WriteLine("\nWell done!");
         ShowSpinner(2);
-        Console.WriteLine($"You have completed {_time} seconds of the {_name}");
+        Console.WriteLine($"You have completed {_time} seconds of the {_name}.");
         ShowSpinner(2);
     }
 
@@ -39,13 +39,13 @@ public class Activity
         for (int i = 0; i < seconds * 4; i++)
         {
             Console.Write(spinner[i % 4] + "\b");
-            Thread.Sleep(250); 
+            Thread.Sleep(250);
         }
         
         Console.Write(" \b");
     }
 
-    public void ShowCountDown(int seconds)
+    public void ShowCountdown(int seconds)
     {
         for (int i = seconds; i > 0; i--)
         {
