@@ -3,7 +3,7 @@ public class BreathingActivity : Activity
     public BreathingActivity() 
         : base("Breathing Activity.",
         "This activity is designed and can help to reduce stress, lower your blood pressure, and improve sleep. " +
-        "Clear your mind and focus on the movement of your body as you breathe.")
+        "\nClear your mind and focus on the movement of your body as you breathe.")
     {
 
     }

@@ -29,7 +29,7 @@ public class Activity
     {
         Console.WriteLine("\nWell done!");
         ShowSpinner(2);
-        Console.WriteLine($"You have completed {_time} seconds of the {_name}.");
+        Console.WriteLine($"You have completed {_time} seconds of the {_name}");
         ShowSpinner(2);
     }
 
