@@ -30,8 +30,10 @@ public class ListingActivity : Activity
         List<string> responses = new List<string>();
         int elapsedTime = 0;
         int listItem = 1;
+        int totalTime = _time + 5;
 
-        while (elapsedTime < _time)
+
+        while (elapsedTime < totalTime)
         {
             Console.Write($"{listItem}. ");
             responses.Add(Console.ReadLine());

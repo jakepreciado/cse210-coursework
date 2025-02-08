@@ -10,8 +10,9 @@ public class BreathingActivity : Activity
     public void Run()
     {
         DisplayStartingMessage();
+        int totalTime = _time + 5;
         
-        for (int i = 0; i < _time / 10; i++)
+        for (int i = 0; i < totalTime / 10; i++)
         {
             Console.Write("\n\nBreathe in through your nose... ");
             ShowCountdown(4);

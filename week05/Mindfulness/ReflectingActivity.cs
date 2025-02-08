@@ -1,4 +1,4 @@
-public class ReflectingActivity : Activity
+public class ReflectionActivity : Activity
 {
     private List<string> _prompts = new List<string>
     {
@@ -21,7 +21,7 @@ public class ReflectingActivity : Activity
         "How can you keep this experience in mind in the future?"
     };
 
-    public ReflectingActivity()
+    public ReflectionActivity()
         : base("Reflection Activity", "This activity helps you reflect on times when you have shown strength and resilience.")
     {
     }
@@ -30,6 +30,7 @@ public class ReflectingActivity : Activity
     {
         DisplayStartingMessage();
 
+        int totalTime = _time + 5;
         Random random = new Random();
         List<string> availableQuestions = new List<string>(_questions);
 
@@ -37,7 +38,7 @@ public class ReflectingActivity : Activity
         ShowSpinner(5);
 
         int elapsedTime = 0;
-        while (elapsedTime < _time)
+        while (elapsedTime < totalTime)
         {
             int index = random.Next(availableQuestions.Count);
 
